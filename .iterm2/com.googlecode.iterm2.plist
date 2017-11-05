@@ -284,13 +284,13 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>841 132 566 233 0 0 1440 877 </string>
+	<string>841 132 566 356 0 0 1440 900 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>410 363 620 392 0 0 1440 877 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>523 306 937 512 0 0 1440 877 </string>
+	<string>0 110 918 401 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 0 956 877 0 0 1440 877 </string>
+	<string>0 436 585 427 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>0 0 717 877 0 0 1440 877 </string>
 	<key>NeverWarnAboutShortLivedSessions_47F81E39-F715-4199-8537-F2BC5667BEB5</key>
@@ -865,9 +865,11 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>LiterationMonoPowerline 12</string>
+			<string>D2CodingForPowerline 12</string>
 			<key>Option Key Sends</key>
 			<integer>2</integer>
+			<key>Place Prompt at First Column</key>
+			<false/>
 			<key>Prompt Before Closing 2</key>
 			<false/>
 			<key>Right Option Key Sends</key>
@@ -900,6 +902,8 @@
 			<false/>
 			<key>Shortcut</key>
 			<string></string>
+			<key>Show Mark Indicators</key>
+			<false/>
 			<key>Silence Bell</key>
 			<false/>
 			<key>Sync Title</key>
@@ -912,6 +916,8 @@
 			<integer>4</integer>
 			<key>Transparency</key>
 			<real>0.0</real>
+			<key>Unicode Normalization</key>
+			<integer>0</integer>
 			<key>Unlimited Scrollback</key>
 			<false/>
 			<key>Use Bold Font</key>
