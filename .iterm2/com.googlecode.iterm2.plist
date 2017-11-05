@@ -288,9 +288,9 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>410 363 620 392 0 0 1440 877 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>523 345 796 473 0 0 1440 877 </string>
+	<string>523 306 937 512 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>792 254 564 377 0 0 1440 877 </string>
+	<string>0 0 956 877 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>0 0 717 877 0 0 1440 877 </string>
 	<key>NeverWarnAboutShortLivedSessions_47F81E39-F715-4199-8537-F2BC5667BEB5</key>
@@ -537,7 +537,7 @@
 			<key>Disable Window Resizing</key>
 			<true/>
 			<key>Flashing Bell</key>
-			<true/>
+			<false/>
 			<key>Foreground Color</key>
 			<dict>
 				<key>Blue Component</key>
