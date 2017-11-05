@@ -75,11 +75,11 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>410 363 620 392 0 0 1440 877 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>2146 709 918 512 0 0 3440 1417 </string>
+	<string>2146 748 796 473 0 0 3440 1417 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 710 1144 707 0 0 3440 1417 </string>
+	<string>720 442 717 435 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>2293 4 1144 469 0 0 3440 1417 </string>
+	<string>0 0 717 877 0 0 1440 877 </string>
 	<key>NeverWarnAboutShortLivedSessions_47F81E39-F715-4199-8537-F2BC5667BEB5</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_47F81E39-F715-4199-8537-F2BC5667BEB5_selection</key>
@@ -722,7 +722,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>8E45120F-27A8-4143-A2E1-2EEA2F10EBD1</string>
 	<key>NoSyncLastTipTime</key>
-	<real>530784274.61888802</real>
+	<real>530962553.23916203</real>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -749,7 +749,10 @@
 		<string>0012</string>
 		<string>0013</string>
 		<string>0014</string>
+		<string>0015</string>
 	</array>
+	<key>PasteTabToStringTabStopSize</key>
+	<integer>4</integer>
 	<key>PointerActions</key>
 	<dict>
 		<key>Button,1,1,,</key>
@@ -796,7 +799,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-10-26T12:49:53Z</date>
+	<date>2017-10-29T09:36:08Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUSkippedVersion</key>

@@ -52,7 +52,7 @@ POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs time b
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git maven docker)
+plugins=(git mvn docker)
 
 # User configuration
 
@@ -89,3 +89,6 @@ bindkey "^[^[[C" forward-word
 bindkey "^[^[[D" backward-word
 bindkey "^[d" delete-word
 eval "$(jenv init -)"
+
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
