@@ -15,7 +15,7 @@
 -- OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER 
 -- DEALINGS IN THE SOFTWARE.
 
-hs.window.animationDuration = 0.3
+hs.window.animationDuration = 0.05
 
 local sizes = {2, 3, 3/2}
 local fullScreenSizes = {1, 4/3, 2}
@@ -108,6 +108,17 @@ function fullDimension(dim)
     hs.grid.set(win, cell, screen)
   end
 end
+
+
+hs.hotkey.bind(hypershift, "right", function ()
+  local win = hs.window.focusedWindow()
+  win:moveOneScreenEast()
+end)
+
+hs.hotkey.bind(hypershift, "left", function ()
+  local win = hs.window.focusedWindow()
+  win:moveOneScreenWest()
+end)
 
 hs.hotkey.bind(hyper, "down", function ()
   pressed.down = true
