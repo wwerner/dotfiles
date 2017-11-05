@@ -288,9 +288,9 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>410 363 620 392 0 0 1440 877 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>0 110 918 401 0 0 1440 900 </string>
+	<string>0 182 918 401 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 436 585 427 0 0 1440 900 </string>
+	<string>0 478 505 377 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>0 0 717 877 0 0 1440 877 </string>
 	<key>NeverWarnAboutShortLivedSessions_47F81E39-F715-4199-8537-F2BC5667BEB5</key>
@@ -865,7 +865,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>D2CodingForPowerline 12</string>
+			<string>KnackNerdFontC-Regular 11</string>
 			<key>Option Key Sends</key>
 			<integer>2</integer>
 			<key>Place Prompt at First Column</key>
