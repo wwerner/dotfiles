@@ -98,3 +98,7 @@ export LANG=en_US.UTF-8
 # private aliases
 alias gffs='git flow feature start'
 alias gfff='git flow feature finish'
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/w.werner/.sdkman"
+[[ -s "/Users/w.werner/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/w.werner/.sdkman/bin/sdkman-init.sh"
