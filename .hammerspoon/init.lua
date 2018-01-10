@@ -19,6 +19,11 @@ hotkey.bind(hyper,"2", function() tiling.setMainVertical(0.5) end)
 hotkey.bind(hyper,"3", function() tiling.setMainVertical(0.75) end)
 
 tiling.set('layouts', {
-    'main-vertical', 'gp-vertical', 'fullscreen'
-  --'gp-vertical-variable'
+  'gp-vertical', 'main-vertical-variable', 'fullscreen'
+  -- , 'main-vertical' 
+  -- , 'gp-vertical-variable'
 })
+
+hs.urlevent.bind("someAlert", function(eventName, params)
+  hs.alert.show(hotkey)
+end)

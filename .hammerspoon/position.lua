@@ -183,6 +183,13 @@ hs.hotkey.bind(hyper, "f", function ()
   end
 end)
 
+hs.hotkey.bind(hyper, "h", function ()
+  local win = hs.window.focusedWindow()
+  if win ~= nil then
+    win:minimize()
+  end
+end)
+
 hs.hotkey.bind(hyper, "i", function ()
   local win = hs.window.frontmostWindow()
   local id = win:id()
