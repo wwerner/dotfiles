@@ -41,8 +41,6 @@ brew install git-flow-avh
 brew install keybase
 brew cask install mounty
 brew install icdiff
-brew tap caskroom/fonts
-brew cask install font-hack-nerd-font
 brew cask install real-vnc\n
 brew install httpie
 brew install ghostscript
