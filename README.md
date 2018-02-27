@@ -41,6 +41,15 @@ brew install git-flow-avh
 brew install keybase
 brew cask install mounty
 brew install icdiff
+brew tap caskroom/fonts
+brew cask install font-hack-nerd-font
+brew cask install real-vnc\n
+brew install httpie
+brew install ghostscript
+brew install coreutils
+brew cask install vagrant
+brew cask install virtualbox-extension-pack
+brew install gpg
 ```
 
 (at some point in time, I'll script the installation of those. Probably when I get my next machine.)
