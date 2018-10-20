@@ -58,7 +58,7 @@ plugins=(git mvn docker)
 
 # User configuration
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:$PATH"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -95,10 +95,18 @@ eval "$(jenv init -)"
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
+export HEROKU_ORGANIZATION=bluerain
+
 # private aliases
 alias gffs='git flow feature start'
 alias gfff='git flow feature finish'
+gpr() { git fetch origin refs/pull/$1/head:pr_$1 && git checkout pr_$1 }
+
+alias nrd='npm run dev'
+alias nrb='npm run build'
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/Users/w.werner/.sdkman"
 [[ -s "/Users/w.werner/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/w.werner/.sdkman/bin/sdkman-init.sh"
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
