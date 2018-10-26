@@ -27,7 +27,7 @@ brew cask install font-hack-nerd-font
 Some Things i seem to have installed additionally
 ```
 $history | grep brew
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"\n
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew install jenv
 brew install cask
 brew install homebrew-cask
@@ -64,7 +64,10 @@ brew install shellcheck
 brew install mailcatcher
 brew cask install android-platform-tools
 brew cask install the-unarchiver
-
+brew install bat
+brew install prettyping
+brew install fzf
+brew install tldr
 ```
 
 (at some point in time, I'll script the installation of those. Probably when I get my next machine.)
