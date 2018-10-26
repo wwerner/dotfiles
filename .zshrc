@@ -106,6 +106,7 @@ alias nrd='npm run dev'
 alias nrb='npm run build'
 
 alias cat=bat
+alias ping=prettyping
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/Users/w.werner/.sdkman"
