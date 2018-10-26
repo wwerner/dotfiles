@@ -105,6 +105,8 @@ gpr() { git fetch origin refs/pull/$1/head:pr_$1 && git checkout pr_$1 }
 alias nrd='npm run dev'
 alias nrb='npm run build'
 
+alias cat=bat
+
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/Users/w.werner/.sdkman"
 [[ -s "/Users/w.werner/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/w.werner/.sdkman/bin/sdkman-init.sh"
