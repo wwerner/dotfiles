@@ -43,3 +43,11 @@ brew install bat
 brew install prettyping
 brew install fzf
 brew install tldr
+brew install asciinema
+brew install cloc
+brew install gource
+brew install ffmpeg
+brew install pandoc
+brew install asciidoctor-pdf
+brew install asciidoctor-latex
+
