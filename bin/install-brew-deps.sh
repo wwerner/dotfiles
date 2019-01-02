@@ -48,6 +48,4 @@ brew install cloc
 brew install gource
 brew install ffmpeg
 brew install pandoc
-brew install asciidoctor-pdf
-brew install asciidoctor-latex
 
