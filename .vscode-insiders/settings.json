@@ -1,0 +1,7 @@
+{
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": "2000",
+    "terminal.integrated.fontFamily": "Knack Nerd Font",
+    "window.zoomLevel": 0,
+    "workbench.colorTheme": "Solarized Light"
+}
