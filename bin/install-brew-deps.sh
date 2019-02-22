@@ -53,3 +53,4 @@ brew cask install cyberduck
 brew cask install minikube
 brew install golang
 brew cask install hammerspoon
+brew cask install iterm2
