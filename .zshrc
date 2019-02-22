@@ -120,8 +120,4 @@ export GOPATH=$(go env GOPATH)
 # PHP
 alias homestead='function __homestead() { (cd ~/Homestead && vagrant $*); unset -f __homestead; }; __homestead'
 
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="/Users/w.werner/.sdkman"
-[[ -s "/Users/w.werner/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/w.werner/.sdkman/bin/sdkman-init.sh"
-
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$HOME/.composer/vendor/bin:$PATH"
