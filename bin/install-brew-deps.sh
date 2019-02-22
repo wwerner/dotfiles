@@ -52,3 +52,4 @@ brew cask install macpass
 brew cask install cyberduck
 brew cask install minikube
 brew install golang
+brew cask install hammerspoon
