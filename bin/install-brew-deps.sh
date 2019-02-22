@@ -7,6 +7,8 @@ brew cask install font-hack-nerd-font
 brew install cask
 brew install homebrew-cask
 brew tap caskroom/versions
+brew tap homebrew/cask
+brew tap homebrew/cask-versions
 brew cask install java8
 brew install maven
 brew install watch
@@ -54,3 +56,4 @@ brew cask install minikube
 brew install golang
 brew cask install hammerspoon
 brew cask install iterm2
+
