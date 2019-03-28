@@ -56,5 +56,5 @@ brew cask install minikube
 brew install golang
 brew cask install hammerspoon
 brew cask install iterm2
-brew cask install visual-studio-code-insiders
+brew cask install caskroom/versions/visual-studio-code-insiders
 
