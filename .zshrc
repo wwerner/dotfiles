@@ -90,7 +90,7 @@ source $ZSH/oh-my-zsh.sh
 bindkey "^[^[[C" forward-word
 bindkey "^[^[[D" backward-word
 bindkey "^[d" delete-word
-eval "$(jenv init -)"
+# eval "$(jenv init -)"
 
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
@@ -121,3 +121,7 @@ export GOPATH=$(go env GOPATH)
 alias homestead='function __homestead() { (cd ~/Homestead && vagrant $*); unset -f __homestead; }; __homestead'
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$HOME/.composer/vendor/bin:$PATH"
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/w.werner/.sdkman"
+[[ -s "/Users/w.werner/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/w.werner/.sdkman/bin/sdkman-init.sh"
