@@ -123,5 +123,5 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$HOME/.
 . /usr/local/etc/profile.d/z.sh
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="/Users/w.werner/.sdkman"
+export SDKMAN_DIR="/Users/wwerner/.sdkman"
 [[ -s "/Users/wwerner/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/wwerner/.sdkman/bin/sdkman-init.sh"
