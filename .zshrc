@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/wwerner/.oh-my-zsh
+export ZSH=/Users/w.werner/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -121,6 +121,11 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$HOME/.
 
 # Z
 . /usr/local/etc/profile.d/z.sh
+
+# Homestead
+function homestead() {
+    ( cd ~/Homestead && vagrant $* )
+}
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/Users/wwerner/.sdkman"

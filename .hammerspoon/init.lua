@@ -4,3 +4,5 @@ mash = {"ctrl", "cmd"}
 
 require('position')
 require('tiling')
+require('menu')
+require('abbrevs')
