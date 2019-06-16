@@ -106,6 +106,7 @@ alias nrd='npm run dev'
 alias nrb='npm run build'
 
 alias cat=bat
+export BAT_THEME="Monokai Extended Light"
 alias ping=prettyping
 
 # FZF
