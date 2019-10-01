@@ -54,7 +54,7 @@ POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs time b
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git mvn docker)
+plugins=(git mvn docker thefuck)
 
 # User configuration
 
@@ -129,5 +129,7 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$HOME/.
 #}
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="/Users/wwerner/.sdkman"
-[[ -s "/Users/wwerner/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/wwerner/.sdkman/bin/sdkman-init.sh"
+export SDKMAN_DIR="/Users/w.werner/.sdkman"
+[[ -s "/Users/w.werner/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/w.werner/.sdkman/bin/sdkman-init.sh"
+
+eval $(thefuck --alias)
