@@ -1,7 +1,11 @@
 {
     "files.autoSave": "afterDelay",
     "files.autoSaveDelay": "2000",
-    "terminal.integrated.fontFamily": "Hack Regular Nerd Font",
-    "window.zoomLevel": 0,
-    "workbench.colorTheme": "Solarized Light"
+    "terminal.integrated.fontFamily": "Hack Nerd Font",
+    "window.zoomLevel": 1,
+    "workbench.colorTheme": "Solarized Light",
+    "vscode_custom_css.imports": [
+        "file:///Users/w.werner/Documents/dotfiles/.vscode-insiders/synthwave84.css"
+    ],
+    "vscode_custom_css.policy": true
 }
