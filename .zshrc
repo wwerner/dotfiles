@@ -150,5 +150,3 @@ if [ -f '/Users/wwerner/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/w
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/Users/w.werner/.sdkman"
 [[ -s "/Users/w.werner/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/w.werner/.sdkman/bin/sdkman-init.sh"
-
-eval $(thefuck --alias)
