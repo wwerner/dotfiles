@@ -101,6 +101,19 @@ export HEROKU_ORGANIZATION=bluerain
 alias gffs='git flow feature start'
 alias gfff='git flow feature finish'
 gpr() { git fetch origin refs/pull/$1/head:pr_$1 && git checkout pr_$1 }
+# git safe origin
+# - 
+# save local work to a separate branch and revert to the current branches origin
+gso() 
+{ 
+  branch=$(git rev-parse --abbrev-ref HEAD); qualifier=$(date -u +"%Y-%m-%dT%H%M%S") \
+  && git add . \
+  && git commit -m "Saving local work from $branch to local/stash/$branch-$qualifier" \
+  && git branch local/stash/$branch-$qualifier \
+  && git checkout $branch \
+  && git fetch origin \
+  && git reset --hard origin/$branch 
+}
 
 alias nrd='npm run dev'
 alias nrb='npm run build'
@@ -127,6 +140,12 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$HOME/.
 #function homestead() {
 #    ( cd ~/Homestead && vagrant $* )
 #}
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/wwerner/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/wwerner/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/wwerner/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/wwerner/google-cloud-sdk/completion.zsh.inc'; fi
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/Users/wwerner/.sdkman"
