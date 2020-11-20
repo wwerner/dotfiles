@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/wwerner/.oh-my-zsh
+export ZSH=/Users/w.werner/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -148,5 +148,7 @@ if [ -f '/Users/wwerner/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/wwerner
 if [ -f '/Users/wwerner/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/wwerner/google-cloud-sdk/completion.zsh.inc'; fi
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="/Users/wwerner/.sdkman"
-[[ -s "/Users/wwerner/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/wwerner/.sdkman/bin/sdkman-init.sh"
+export SDKMAN_DIR="/Users/w.werner/.sdkman"
+[[ -s "/Users/w.werner/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/w.werner/.sdkman/bin/sdkman-init.sh"
+
+eval $(thefuck --alias)
