@@ -1,0 +1,10 @@
+# Global git ignores
+
+# macos
+.DS_Store
+
+# MS Office temp. files
+~$*.doc*
+~$*.xls*
+*.xlk
+~$*.ppt*
