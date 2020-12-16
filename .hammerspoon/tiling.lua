@@ -17,7 +17,7 @@ hotkey.bind(hyper,"4", function() tiling.setMainVertical(0.75) end)
 hotkey.bind(hyper,"5", function() tiling.setMainVertical(0.90) end)
 
 tiling.set('layouts', {
-  -- 'gp-vertical', 
+  'gp-vertical', 
   'main-vertical-variable'
   -- , 'fullscreen'
   -- , 'main-vertical' 

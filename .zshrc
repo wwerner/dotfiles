@@ -98,8 +98,9 @@ export LANG=en_US.UTF-8
 export HEROKU_ORGANIZATION=bluerain
 
 # private aliases
-alias gffs='git flow feature start'
 alias gfff='git flow feature finish'
+alias gfbs='git flow bugfix start'
+alias gffs='git flow feature start'
 gpr() { git fetch origin refs/pull/$1/head:pr_$1 && git checkout pr_$1 }
 # git safe origin
 # - 
@@ -137,9 +138,9 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$HOME/.
 . /usr/local/etc/profile.d/z.sh
 
 # Homestead
-#function homestead() {
-#    ( cd ~/Homestead && vagrant $* )
-#}
+function homestead() {
+    ( cd ~/Homestead && vagrant $* )
+}
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/wwerner/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/wwerner/google-cloud-sdk/path.zsh.inc'; fi
@@ -150,3 +151,23 @@ if [ -f '/Users/wwerner/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/w
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/Users/w.werner/.sdkman"
 [[ -s "/Users/w.werner/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/w.werner/.sdkman/bin/sdkman-init.sh"
+
+export PATH=/Users/w.werner/.local/bin:$PATH
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/Users/w.werner/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/Users/w.werner/opt/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/w.werner/opt/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/Users/w.werner/opt/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
+export PATH="/usr/local/opt/ruby/bin:$PATH"
+export PATH="/usr/local/opt/ruby/bin:$PATH"
