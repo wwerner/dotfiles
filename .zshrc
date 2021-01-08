@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/w.werner/.oh-my-zsh
+export ZSH=/Users/$USER/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -103,17 +103,17 @@ alias gfbs='git flow bugfix start'
 alias gffs='git flow feature start'
 gpr() { git fetch origin refs/pull/$1/head:pr_$1 && git checkout pr_$1 }
 # git safe origin
-# - 
+# -
 # save local work to a separate branch and revert to the current branches origin
-gso() 
-{ 
+gso()
+{
   branch=$(git rev-parse --abbrev-ref HEAD); qualifier=$(date -u +"%Y-%m-%dT%H%M%S") \
   && git add . \
   && git commit -m "Saving local work from $branch to local/stash/$branch-$qualifier" \
   && git branch local/stash/$branch-$qualifier \
   && git checkout $branch \
   && git fetch origin \
-  && git reset --hard origin/$branch 
+  && git reset --hard origin/$branch
 }
 
 alias nrd='npm run dev'
@@ -149,21 +149,21 @@ if [ -f '/Users/wwerner/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/wwerner
 if [ -f '/Users/wwerner/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/wwerner/google-cloud-sdk/completion.zsh.inc'; fi
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="/Users/w.werner/.sdkman"
-[[ -s "/Users/w.werner/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/w.werner/.sdkman/bin/sdkman-init.sh"
+export SDKMAN_DIR="/Users/$USER/.sdkman"
+[[ -s "/Users/$USER/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/$USER/.sdkman/bin/sdkman-init.sh"
 
-export PATH=/Users/w.werner/.local/bin:$PATH
+export PATH=/Users/$USER/.local/bin:$PATH
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/w.werner/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+__conda_setup="$('/Users/$USER/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/Users/w.werner/opt/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/Users/w.werner/opt/anaconda3/etc/profile.d/conda.sh"
+    if [ -f "/Users/$USER/opt/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/$USER/opt/anaconda3/etc/profile.d/conda.sh"
     else
-        export PATH="/Users/w.werner/opt/anaconda3/bin:$PATH"
+        export PATH="/Users/$USER/opt/anaconda3/bin:$PATH"
     fi
 fi
 unset __conda_setup
