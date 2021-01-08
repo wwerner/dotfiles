@@ -123,6 +123,10 @@ alias cat=bat
 export BAT_THEME="Monokai Extended Light"
 alias ping=prettyping
 
+# Images beautification, see https://twitter.com/thingskatedid/status/1316074032379248640
+alias icat="kitty icat --align=left"
+alias isvg="rsvg-convert | icat"
+
 # FZF
 alias preview="fzf --preview 'bat --color \"always\" {}'"
 export FZF_DEFAULT_OPTS="--bind='f1:execute(code-insiders {})+abort'"
@@ -142,18 +146,11 @@ function homestead() {
     ( cd ~/Homestead && vagrant $* )
 }
 
-# The next line updates PATH for the Google Cloud SDK.
+# Google Cloud SDK.
 if [ -f '/Users/wwerner/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/wwerner/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
 if [ -f '/Users/wwerner/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/wwerner/google-cloud-sdk/completion.zsh.inc'; fi
 
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="/Users/$USER/.sdkman"
-[[ -s "/Users/$USER/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/$USER/.sdkman/bin/sdkman-init.sh"
-
-export PATH=/Users/$USER/.local/bin:$PATH
-
+# Conda
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/Users/$USER/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
@@ -171,3 +168,9 @@ unset __conda_setup
 
 export PATH="/usr/local/opt/ruby/bin:$PATH"
 export PATH="/usr/local/opt/ruby/bin:$PATH"
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/$USER/.sdkman"
+[[ -s "/Users/$USER/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/$USER/.sdkman/bin/sdkman-init.sh"
+
+export PATH=/Users/$USER/.local/bin:$PATH
