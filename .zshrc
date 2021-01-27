@@ -136,15 +136,10 @@ export FZF_DEFAULT_OPTS="--bind='f1:execute(code-insiders {})+abort'"
 export PATH=$PATH:$(go env GOPATH)/bin
 export GOPATH=$(go env GOPATH)
 
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$HOME/.composer/vendor/bin:$PATH"
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 # Z
 . /usr/local/etc/profile.d/z.sh
-
-# Homestead
-function homestead() {
-    ( cd ~/Homestead && vagrant $* )
-}
 
 # Google Cloud SDK.
 if [ -f '/Users/wwerner/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/wwerner/google-cloud-sdk/path.zsh.inc'; fi
@@ -166,7 +161,6 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
-export PATH="/usr/local/opt/ruby/bin:$PATH"
 export PATH="/usr/local/opt/ruby/bin:$PATH"
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
