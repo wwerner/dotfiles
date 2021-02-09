@@ -4,10 +4,10 @@ My private dotfiles. Feel free to snoop around.
 
 Currently contains my configuration for:
 * OS X defaults
-* iTerm
+* Kitty
 * Hammerspoon 
 * oh my zsh 
-* fzf
+* fzf / bat / git-delta / git fuzzy ...
 * VS Code
 
 Additional requirements (shouldn't I install them via brew?):
@@ -16,14 +16,9 @@ Additional requirements (shouldn't I install them via brew?):
 ```
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
-* https://github.com/bhilburn/powerlevel9k 
+* https://github.com/romkatv/powerlevel10k
 ```
-git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
-```
-* https://github.com/ryanoasis/nerd-fonts
-```
-brew tap caskroom/fonts
-brew cask install font-hack-nerd-font
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 ```
 
 Some scripts expect this repostiory to be located at `~/Documents/dotfiles` (you're welcome, future me.)
