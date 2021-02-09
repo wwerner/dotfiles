@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 
-brew cask install kitty
-brew cask install cyberduck
-brew cask install gimp
-brew cask install macpass
-brew cask install visual-studio-code-insiders
-brew cask install hammerspoon
-brew cask install font-hack-nerd-font
-brew cask install the-unarchiver
+brew install kitty
+brew install cyberduck
+brew install gimp
+brew install macpass
+brew install visual-studio-code-insiders
+brew install hammerspoon
+brew install font-hack-nerd-font
+brew install the-unarchiver
 
 brew install bat
 brew install coreutils
@@ -26,9 +26,9 @@ brew install httpie
 brew install icdiff
 brew install imagemagick
 brew install jq
-brew install k9s
-brew install kafkacat
-brew install macpass
+# brew install k9s
+# brew install kafkacat
+# brew install macpass
 brew install nmap
 brew install pandoc
 brew install prettyping
