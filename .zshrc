@@ -1,3 +1,10 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/$USER/.oh-my-zsh
 
@@ -5,10 +12,9 @@ export ZSH=/Users/$USER/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-#ZSH_THEME="agnoster"
-POWERLEVEL9K_MODE='nerdfont-complete'
+# POWERLEVEL9K_MODE='nerdfont-complete'
 
-ZSH_THEME="powerlevel9k/powerlevel9k"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs time battery)
 
@@ -133,8 +139,8 @@ export FZF_DEFAULT_OPTS="--bind='f1:execute(code-insiders {})+abort'"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # Golang
-export PATH=$PATH:$(go env GOPATH)/bin
-export GOPATH=$(go env GOPATH)
+# export PATH=$PATH:$(go env GOPATH)/bin
+# export GOPATH=$(go env GOPATH)
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
@@ -168,3 +174,6 @@ export SDKMAN_DIR="/Users/$USER/.sdkman"
 [[ -s "/Users/$USER/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/$USER/.sdkman/bin/sdkman-init.sh"
 
 export PATH=/Users/$USER/.local/bin:$PATH
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
