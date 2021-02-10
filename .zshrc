@@ -126,7 +126,7 @@ alias nrd='npm run dev'
 alias nrb='npm run build'
 
 alias cat=bat
-export BAT_THEME="Monokai Extended Light"
+export BAT_THEME="Monokai Extended Bright"
 alias ping=prettyping
 
 # Images beautification, see https://twitter.com/thingskatedid/status/1316074032379248640
@@ -168,15 +168,15 @@ unset __conda_setup
 # <<< conda initialize <<<
 
 export PATH="/usr/local/opt/ruby/bin:$PATH"
-
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="/Users/$USER/.sdkman"
-[[ -s "/Users/$USER/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/$USER/.sdkman/bin/sdkman-init.sh"
-
 export PATH=/Users/$USER/.local/bin:$PATH
+export PATH=/usr/local/bin/git-fuzzy/bin:$PATH
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # To customize prompt, run `p10k configure` or edit ~/Documents/dotfiles/.p10k.zsh.
 [[ ! -f ~/Documents/dotfiles/.p10k.zsh ]] || source ~/Documents/dotfiles/.p10k.zsh
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/$USER/.sdkman"
+[[ -s "/Users/$USER/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/$USER/.sdkman/bin/sdkman-init.sh"
