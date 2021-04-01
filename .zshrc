@@ -147,10 +147,6 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 # Z
 . /usr/local/etc/profile.d/z.sh
 
-# Google Cloud SDK.
-if [ -f '/Users/wwerner/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/wwerner/google-cloud-sdk/path.zsh.inc'; fi
-if [ -f '/Users/wwerner/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/wwerner/google-cloud-sdk/completion.zsh.inc'; fi
-
 # Conda
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
