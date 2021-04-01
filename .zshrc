@@ -126,7 +126,7 @@ alias nrd='npm run dev'
 alias nrb='npm run build'
 
 alias cat=bat
-export BAT_THEME="Monokai Extended Bright"
+export BAT_THEME="Solarized (light)"
 alias ping=prettyping
 
 # Images beautification, see https://twitter.com/thingskatedid/status/1316074032379248640
@@ -154,14 +154,14 @@ if [ -f '/Users/wwerner/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/w
 # Conda
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/$USER/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+__conda_setup="$('/Users/wwerner/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/Users/$USER/opt/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/Users/$USER/opt/anaconda3/etc/profile.d/conda.sh"
+    if [ -f "/Users/wwerner/opt/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/wwerner/opt/anaconda3/etc/profile.d/conda.sh"
     else
-        export PATH="/Users/$USER/opt/anaconda3/bin:$PATH"
+        export PATH="/Users/wwerner/opt/anaconda3/bin:$PATH"
     fi
 fi
 unset __conda_setup
@@ -176,6 +176,15 @@ export PATH=/usr/local/bin/git-fuzzy/bin:$PATH
 
 # To customize prompt, run `p10k configure` or edit ~/Documents/dotfiles/.p10k.zsh.
 [[ ! -f ~/Documents/dotfiles/.p10k.zsh ]] || source ~/Documents/dotfiles/.p10k.zsh
+
+# Android platform tools
+export PATH=$PATH:/Users/$USER/Library/Android/sdk/platform-tools
+
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/Users/$USER/.sdkman"
