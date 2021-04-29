@@ -147,17 +147,21 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 # Z
 . /usr/local/etc/profile.d/z.sh
 
+# Actyx
+## Vault
+alias vauth="vault login -method aws role=dev-wolfgang > /dev/null"
+
 # Conda
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/wwerner/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+__conda_setup="$('/Users/wwerner/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/Users/wwerner/opt/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/Users/wwerner/opt/anaconda3/etc/profile.d/conda.sh"
+    if [ -f "/Users/wwerner/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/wwerner/anaconda3/etc/profile.d/conda.sh"
     else
-        export PATH="/Users/wwerner/opt/anaconda3/bin:$PATH"
+        export PATH="/Users/wwerner/anaconda3/bin:$PATH"
     fi
 fi
 unset __conda_setup
