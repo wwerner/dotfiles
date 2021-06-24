@@ -126,7 +126,7 @@ alias nrd='npm run dev'
 alias nrb='npm run build'
 
 alias cat=bat
-export BAT_THEME="Solarized (light)"
+export BAT_THEME="OneHalfLight"
 alias ping=prettyping
 
 # Images beautification, see https://twitter.com/thingskatedid/status/1316074032379248640
@@ -149,7 +149,8 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 # Actyx
 ## Vault
-alias vauth="vault login -method aws role=dev-wolfgang > /dev/null"
+export VAULT_ADDR=https://vault.actyx.net 
+alias vauth="AWS_PROFILE=actyx vault login -method aws role=dev-wolfgang > /dev/null"
 
 # Conda
 # >>> conda initialize >>>
@@ -189,3 +190,6 @@ export NVM_DIR="$HOME/.nvm"
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/Users/$USER/.sdkman"
 [[ -s "/Users/$USER/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/$USER/.sdkman/bin/sdkman-init.sh"
+
+unfunction git
+
