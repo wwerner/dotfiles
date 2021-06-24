@@ -3,7 +3,7 @@ hs.hotkey.bind(hyper,"t",function()
 end)
 
 hs.hotkey.bind(hyper,"d",function()
-    hs.eventtap.keyStrokes(os.date("%d.%m.%y"))
+    hs.eventtap.keyStrokes(os.date("%Y-%m-%d"))
 end)
 
 hs.hotkey.bind(hyper,"s",function()
