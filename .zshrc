@@ -207,5 +207,4 @@ export NVM_DIR="$HOME/.nvm"
 export SDKMAN_DIR="/Users/$USER/.sdkman"
 [[ -s "/Users/$USER/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/$USER/.sdkman/bin/sdkman-init.sh"
 
-unfunction git
 
