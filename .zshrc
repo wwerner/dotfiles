@@ -107,7 +107,7 @@ export HEROKU_ORGANIZATION=bluerain
 alias gfff='git flow feature finish'
 alias gfbs='git flow bugfix start'
 alias gffs='git flow feature start'
-gpr() { git fetch origin refs/pull/$1/head:pr_$1 && git checkout pr_$1 }
+
 # git safe origin
 # -
 # save local work to a separate branch and revert to the current branches origin
@@ -143,6 +143,22 @@ export FZF_DEFAULT_OPTS="--bind='f1:execute(code-insiders {})+abort'"
 # export GOPATH=$(go env GOPATH)
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+# Node
+function npms() {
+  if [ ! -f package.json ]; then
+    echo "package.json not found" >&2
+  else 
+    local command=$(jq '.scripts | keys[]' package.json -r | tr -d '"' | 
+    fzf --reverse \
+      --preview-window=:wrap \
+      --preview "jq '.scripts.\"{}\"' package.json -r | tr -d '\"' | sed 's/^[[:blank:]]*//'")
+
+    if [ -n "$command" ]; then
+      eval "npm run $command"
+    fi
+  fi
+}
 
 # Z
 . /usr/local/etc/profile.d/z.sh
