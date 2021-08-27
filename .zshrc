@@ -135,7 +135,8 @@ alias isvg="rsvg-convert | icat"
 
 # FZF
 alias preview="fzf --preview 'bat --color \"always\" {}'"
-export FZF_DEFAULT_OPTS="--bind='f1:execute(code-insiders {})+abort'"
+export FZF_DEFAULT_COMMAND='rg --files'
+export FZF_DEFAULT_OPTS="--bind='f1:execute(code {})+abort'"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # Golang
