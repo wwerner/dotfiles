@@ -1,16 +1,7 @@
-# This is Git's per-user configuration file.
 [user]
 	name = Wolfgang Werner
 	email = mail@wolfgang-werner.net
 
-[merge]
-   tool = intellij
-[mergetool "intellij"]
-   cmd = idea merge $(cd $(dirname "$LOCAL") && pwd)/$(basename "$LOCAL") $(cd $(dirname "$REMOTE") && pwd)/$(basename "$REMOTE") $(cd $(dirname "$BASE") && pwd)/$(basename "$BASE") $(cd $(dirname "$MERGED") && pwd)/$(basename "$MERGED")
-   trustExitCode = true
-[diff]
-   tool = intellij
-[difftool "intellij"]
-   cmd = idea diff $(cd $(dirname "$LOCAL") && pwd)/$(basename "$LOCAL") $(cd $(dirname "$REMOTE") && pwd)/$(basename "$REMOTE")
-[core]
-	excludesfile = ~/.gitignore_global
+
+[includeIf "gitdir:~/Projects/Dixa/"]
+    path = ~/Projects/Dixa/.gitconfig
