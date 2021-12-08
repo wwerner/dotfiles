@@ -126,7 +126,7 @@ alias nrd='npm run dev'
 alias nrb='npm run build'
 
 alias cat=bat
-export BAT_THEME="MonokaiExtendedBright"
+export BAT_THEME="Monokai Extended Bright"
 alias ping=prettyping
 
 # Images beautification, see https://twitter.com/thingskatedid/status/1316074032379248640
