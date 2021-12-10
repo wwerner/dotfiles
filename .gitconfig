@@ -3,5 +3,9 @@
 	email = mail@wolfgang-werner.net
 
 
+[core]
+	excludesfile = ~/.gitignore_global
+
+
 [includeIf "gitdir:~/Projects/Dixa/"]
-    path = ~/Projects/Dixa/.gitconfig
+	path = ~/Projects/Dixa/.gitconfig
