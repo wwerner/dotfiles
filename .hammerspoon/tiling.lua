@@ -4,10 +4,11 @@ require('position')
 local tiling = require "hs.tiling"
 local hotkey = require "hs.hotkey"
 
-hotkey.bind(hyper, "c", function() tiling.cycleLayout() end)
-hotkey.bind(hyper, "j", function() tiling.cycle(1) end)
-hotkey.bind(hyper, "k", function() tiling.cycle(-1) end)
-hotkey.bind(hyper, "space", function() tiling.promote() end)
+hotkey.bind(hyper, "c", "wm: cycle layout", function() tiling.cycleLayout() end)
+hotkey.bind(hyper, "j", "wm: next", function() tiling.cycle(1) end)
+hotkey.bind(hyper, "k", "wm: previous", function() tiling.cycle(-1) end)
+hotkey.bind(hyper, "s", "wm: swap", function() tiling.cycle(1); tiling.promote() end)
+hotkey.bind(hyper, "space", "wm: promote", function() tiling.promote() end)
 -- hotkey.bind(mash, "f", function() tiling.goToLayout("fullscreen") end)
 
 hotkey.bind(hyper,"1", function() tiling.setMainVertical(0.10) end)

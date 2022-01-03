@@ -6,7 +6,7 @@ hs.hotkey.bind(hyper,"d", ": date",function()
     hs.eventtap.keyStrokes(os.date("%Y-%m-%d"))
 end)
 
-hs.hotkey.bind(hyper,"s",": shruggie", function()
+hs.hotkey.bind(hyper,"h",": shruggie", function()
     hs.eventtap.keyStrokes("¯\\_(ツ)_/¯")
 end)
 
