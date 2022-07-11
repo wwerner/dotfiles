@@ -1,1 +1,6 @@
 .DS_Store
+.config/yarn
+.config/gtk-2.0
+.config/gh
+.config/AWSVPNClient
+.config/configstore

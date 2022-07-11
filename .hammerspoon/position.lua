@@ -110,17 +110,17 @@ function fullDimension(dim)
 end
 
 
-hs.hotkey.bind(hypershift, "right", function ()
+hs.hotkey.bind(hypershift, "right", "WM: throw to right screen", function ()
   local win = hs.window.focusedWindow()
   win:moveOneScreenEast()
 end)
 
-hs.hotkey.bind(hypershift, "left", function ()
+hs.hotkey.bind(hypershift, "left", "WM: throw to left screen", function ()
   local win = hs.window.focusedWindow()
   win:moveOneScreenWest()
 end)
 
-hs.hotkey.bind(hyper, "down", function ()
+hs.hotkey.bind(hyper, "down",  "WM: resize down", function ()
   pressed.down = true
   if pressed.up then 
     fullDimension('h')
@@ -134,7 +134,7 @@ end, function ()
   pressed.down = false
 end)
 
-hs.hotkey.bind(hyper, "right", function ()
+hs.hotkey.bind(hyper, "right",  "WM: resize right", function ()
   pressed.right = true
   if pressed.left then 
     fullDimension('w')
@@ -148,7 +148,7 @@ end, function ()
   pressed.right = false
 end)
 
-hs.hotkey.bind(hyper, "left", function ()
+hs.hotkey.bind(hyper, "left", "WM: resize left", function ()
   pressed.left = true
   if pressed.right then 
     fullDimension('w')
@@ -162,7 +162,7 @@ end, function ()
   pressed.left = false
 end)
 
-hs.hotkey.bind(hyper, "up", function ()
+hs.hotkey.bind(hyper, "up",  "WM: resize up", function ()
   pressed.up = true
   if pressed.down then 
       fullDimension('h')
@@ -176,21 +176,21 @@ end, function ()
   pressed.up = false
 end)
 
-hs.hotkey.bind(hyper, "f", function ()
+hs.hotkey.bind(hyper, "f", "WM: fullscreen", function ()
   local win = hs.window.focusedWindow()
   if win ~= nil then
     win:setFullScreen(not win:isFullScreen())
   end
 end)
 
-hs.hotkey.bind(hyper, "h", function ()
+hs.hotkey.bind(hyper, "h", "WM: maximize", function ()
   local win = hs.window.focusedWindow()
   if win ~= nil then
     win:minimize()
   end
 end)
 
-hs.hotkey.bind(hyper, "i", function ()
+hs.hotkey.bind(hyper, "i", "WM: show focussed window", function ()
   local win = hs.window.frontmostWindow()
   local id = win:id()
   local screen = win:screen()

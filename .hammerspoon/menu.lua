@@ -7,6 +7,6 @@ else
 wifiMenu:setTitle("Wifi OFF")
 end
 end
-wifiMenu = hs.menubar.newWithPriority(2147483645)
+wifiMenu = hs.menubar.new()
 ssidChanged()
 wifiWatcher = hs.wifi.watcher.new(ssidChanged):start()
