@@ -64,7 +64,7 @@ plugins=(git npm docker)
 
 # User configuration
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:$PATH"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:/opt/homebrew/lib/ruby/gems/3.1.0/bin:$PATH"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -104,6 +104,7 @@ export LANG=en_US.UTF-8
 export HEROKU_ORGANIZATION=bluerain
 
 # private aliases
+alias lg=lazygit
 alias gfff='git flow feature finish'
 alias gfbs='git flow bugfix start'
 alias gffs='git flow feature start'
@@ -209,3 +210,4 @@ export SDKMAN_DIR="/Users/$USER/.sdkman"
 [[ -s "/Users/$USER/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/$USER/.sdkman/bin/sdkman-init.sh"
 
 
+export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
