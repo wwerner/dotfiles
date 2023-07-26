@@ -9,3 +9,6 @@
 
 [includeIf "gitdir:~/Projects/Dixa/"]
 	path = ~/Projects/Dixa/.gitconfig
+
+[icdiff]
+	options = --highlight --line-numbers

@@ -109,6 +109,7 @@ alias gfff='git flow feature finish'
 alias gfbs='git flow bugfix start'
 alias gffs='git flow feature start'
 
+alias gd='git icdiff'
 # git safe origin
 # -
 # save local work to a separate branch and revert to the current branches origin
