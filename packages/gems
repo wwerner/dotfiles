@@ -1,0 +1,4 @@
+rouge
+asciidoctor
+asciidoctor-latex --pre
+asciidoctor-pdf --pre
