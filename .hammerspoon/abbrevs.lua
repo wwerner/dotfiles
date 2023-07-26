@@ -19,6 +19,10 @@ hs.hotkey.bind(hyper,"h","Abbrev: shruggie", function()
     hs.eventtap.keyStrokes("¯\\_(ツ)_/¯")
 end)
 
+hs.hotkey.bind(hyper,"x","Abbrev: table flip", function()
+  hs.eventtap.keyStrokes("(╯°□°)╯︵ ┻━┻")
+end)
+
 hs.hotkey.bind(hyper,"u","Abbrev: UUID", function()
   hs.eventtap.keyStrokes(uuid())
 end)
