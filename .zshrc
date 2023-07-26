@@ -146,41 +146,20 @@ export FZF_DEFAULT_OPTS="--bind='f1:execute(code {})+abort'"
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
-# Node
-function npms() {
-  if [ ! -f package.json ]; then
-    echo "package.json not found" >&2
-  else 
-    local command=$(jq '.scripts | keys[]' package.json -r | tr -d '"' | 
-    fzf --reverse \
-      --preview-window=:wrap \
-      --preview "jq '.scripts.\"{}\"' package.json -r | tr -d '\"' | sed 's/^[[:blank:]]*//'")
-
-    if [ -n "$command" ]; then
-      eval "npm run $command"
-    fi
-  fi
-}
-
 # Z
-. /usr/local/etc/profile.d/z.sh
-
-# Actyx
-## Vault
-export VAULT_ADDR=https://vault.actyx.net 
-alias vauth="AWS_PROFILE=actyx vault login -method aws role=dev-wolfgang > /dev/null"
+. /opt/homebrew/etc/profile.d/z.sh
 
 # Conda
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/wwerner/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+__conda_setup=$("/Users/$USER/anaconda3/bin/conda" 'shell.zsh' 'hook' 2> /dev/null)
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/Users/wwerner/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/Users/wwerner/anaconda3/etc/profile.d/conda.sh"
+    if [ -f "/Users/$USER/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/$USER/anaconda3/etc/profile.d/conda.sh"
     else
-        export PATH="/Users/wwerner/anaconda3/bin:$PATH"
+        export PATH="/Users/$USER/anaconda3/bin:$PATH"
     fi
 fi
 unset __conda_setup
@@ -204,10 +183,10 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/Users/$USER/.sdkman"
 [[ -s "/Users/$USER/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/$USER/.sdkman/bin/sdkman-init.sh"
 
 
-export PATH="/opt/homebrew/opt/ruby/bin:$PATH"

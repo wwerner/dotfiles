@@ -35,7 +35,7 @@ hs.hotkey.bind(hyper,"g","Abbrev: GitHub details block",function()
 end)
 
 local applicationHotkeys = {
-    c = 'Visual Studio Code - Insiders',
+    e = 'Visual Studio Code - Insiders',
     t = 'Kitty',
     b = 'Brave Browser'
   }
@@ -44,3 +44,4 @@ local applicationHotkeys = {
       hs.application.launchOrFocus(app)
     end)
   end
+  J
