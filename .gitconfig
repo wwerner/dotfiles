@@ -7,8 +7,13 @@
 	excludesfile = ~/.gitignore_global
 
 
-[includeIf "gitdir:~/Projects/Dixa/"]
-	path = ~/Projects/Dixa/.gitconfig
+[includeIf "gitdir:~/Projects/gridx/"]
+	path = ~/Projects/gridx/.gitconfig
 
 [icdiff]
 	options = --highlight --line-numbers
+[credential]
+	helper = 
+	helper = /usr/local/share/gcm-core/git-credential-manager
+[credential "https://dev.azure.com"]
+	useHttpPath = true

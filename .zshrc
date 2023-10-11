@@ -110,6 +110,9 @@ alias gfbs='git flow bugfix start'
 alias gffs='git flow feature start'
 
 alias gd='git icdiff'
+
+alias docker-compose=docker compose
+
 # git safe origin
 # -
 # save local work to a separate branch and revert to the current branches origin
@@ -142,10 +145,23 @@ export FZF_DEFAULT_OPTS="--bind='f1:execute(code {})+abort'"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # Golang
-# export PATH=$PATH:$(go env GOPATH)/bin
+export PATH=$PATH:$(go env GOPATH)/bin
 # export GOPATH=$(go env GOPATH)
+export GOPRIVATE=github.com/grid-x/*
+export GOLANG_PROTOBUF_REGISTRATION_CONFLICT=warn
+
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+# k8s
+source <(kubectl completion zsh)
+
+# git
+export GPG_TTY=$(tty)
+
+# gridX
+export GOPRIVATE=github.com/grid-x/*
+GOLANG_PROTOBUF_REGISTRATION_CONFLICT=warn
 
 # Z
 . /opt/homebrew/etc/profile.d/z.sh
