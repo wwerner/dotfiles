@@ -64,7 +64,7 @@ plugins=(git npm docker)
 
 # User configuration
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:/opt/homebrew/lib/ruby/gems/3.1.0/bin:$PATH"
+export PATH="/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:/opt/homebrew/lib/ruby/gems/3.1.0/bin:$PATH"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -129,6 +129,8 @@ gso()
 
 alias nrd='npm run dev'
 alias nrb='npm run build'
+
+alias code=code-insiders
 
 alias cat=bat
 export BAT_THEME="Monokai Extended Bright"
