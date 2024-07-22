@@ -10,8 +10,17 @@
 [includeIf "gitdir:~/Projects/gridx/"]
 	path = ~/Projects/gridx/.gitconfig
 
-[icdiff]
-	options = --highlight --line-numbers
+[diff]
+        tool = difftastic
+        external = difft
+[difftool]
+        prompt = false
+
+[difftool "difftastic"]
+        cmd = difft "$LOCAL" "$REMOTE"
+[pager]
+        difftool = true
+
 [credential]
 	helper = /usr/local/share/gcm-core/git-credential-manager
 [credential "https://dev.azure.com"]

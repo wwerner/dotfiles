@@ -109,7 +109,7 @@ alias gfff='git flow feature finish'
 alias gfbs='git flow bugfix start'
 alias gffs='git flow feature start'
 
-alias gd='git icdiff'
+alias gd='git diff'
 
 alias docker-compose=docker compose
 
