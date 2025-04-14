@@ -65,6 +65,8 @@ plugins=(git npm docker)
 # User configuration
 
 export PATH="/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:/opt/homebrew/lib/ruby/gems/3.1.0/bin:$PATH"
+PATH="/opt/homebrew/opt/coreutils/libexec/gnubin:$PATH"
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -168,21 +170,10 @@ GOLANG_PROTOBUF_REGISTRATION_CONFLICT=warn
 # Z
 . /opt/homebrew/etc/profile.d/z.sh
 
-# Conda
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup=$("/Users/$USER/anaconda3/bin/conda" 'shell.zsh' 'hook' 2> /dev/null)
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/Users/$USER/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/Users/$USER/anaconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/Users/$USER/anaconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
+# pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init - zsh)"
 
 export PATH="/usr/local/opt/ruby/bin:$PATH"
 export PATH=/Users/$USER/.local/bin:$PATH
