@@ -18,9 +18,10 @@ hotkey.bind(hyper,"4", "WM: vertical separation ratio 4", function() tiling.setM
 hotkey.bind(hyper,"5", "WM: vertical separation ratio 5", function() tiling.setMainVertical(0.90) end)
 
 tiling.set('layouts', {
-  'gp-vertical', 
-  'main-vertical-variable'
+  --'gp-vertical', 
+   'main-vertical-variable'
   -- , 'fullscreen'
   -- , 'main-vertical' 
-  -- , 'gp-vertical-variable'
+  --,
+   --'gp-vertical-variable'
 })
